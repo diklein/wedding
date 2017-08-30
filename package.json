@@ -1,0 +1,42 @@
+{
+  "name": "jkl-tachyons",
+  "version": "1.1.0",
+  "description": "Boilerplate for starting a project with Jekyll and Tachyons",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mrmrs/jkl-tachyons.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "oocss",
+    "performance"
+  ],
+  "author": "mrmrs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrmrs/tachyons/issues"
+  },
+  "devDependencies": {
+    "browser-sync": "^1.1.1",
+    "copy-files": "^0.1.0",
+    "immutable-css-cli": "^1.1.1",
+    "tachyons-cli": "^1.0.8",
+    "watch": "^0.19.2"
+  },
+  "contributors": [
+    {
+      "name": "adam morse",
+      "email": "hi@mrmrs.cc"
+    }
+  ],
+  "scripts": {
+    "start": "npm run build:watch",
+    "mutations": "immutable-css src/tachyons.css --strict",
+    "build": "npm run build:css && npm run build:minify",
+    "build:css": "tachyons src/tachyons.css > css/tachyons.css",
+    "build:minify": "tachyons src/tachyons.css -m > css/tachyons.min.css",
+    "build:watch": "watch 'npm run build' ./src/"
+  }
+}
