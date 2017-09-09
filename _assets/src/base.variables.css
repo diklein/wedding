@@ -1,0 +1,7 @@
+:root {
+  --sans-serif-fallback: "BlinkMacSystemFont", -apple-system, "Helvetica Neue", Helvetica, sans-serif;
+  --sans-serif: "Neue Haas Unica Web", var(--sans-serif-fallback);
+
+  --serif-fallback: "Georgia", "Times New Roman", serif;
+  --serif: "Tiempos Text", var(--serif-fallback);
+}
