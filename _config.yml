@@ -3,7 +3,6 @@ descripiton: "Remy and Dave's Wedding Website"
 author: "David Klein"
 url: "http://localhost:4000"
 permalink: pretty
-exclude: ["node_modules", "gulpfile.js", "Gemfile", "Gemfile.lock", "package.json", "scripts"]
 
 plugins: [jekyll-assets]
 
@@ -12,6 +11,8 @@ manifest_short_name: Remy & Dave
 manifest_lang: en
 manifest_background_color: white
 manifest_display: standalone
+
+exclude: ["node_modules", "gulpfile.js", "Gemfile", "Gemfile.lock", "package.json", "scripts"]
 
 assets:
   digest: true
