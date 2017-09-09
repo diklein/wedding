@@ -26,7 +26,7 @@ var shell        = require('gulp-shell');
 var autoprefixer = require('gulp-autoprefixer');
 var atImport     = require('postcss-import');
 var cp           = require('child_process');
-var browserSync  = require('browser-sync').create();
+var browserSync  = require('browser-sync');
 var htmlmin      = require('gulp-html-minifier');
 
 var processors = [
