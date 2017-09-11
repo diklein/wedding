@@ -1,3 +1,4 @@
+
 .serif {
   font-family: var(--serif);
 }
@@ -10,12 +11,4 @@
   vertical-align: inherit;
   font-size: inherit;
   font-feature-settings: "sups" 1;
-}
-
-.f3 {
-  font-family: var(--serif);
-}
-
-.f4 {
-  font-family: var(--sans-serif);
 }

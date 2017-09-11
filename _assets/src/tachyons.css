@@ -1,53 +1,12 @@
-/* Document
-   ========================================================================== */
+
 html {
-  /*font-family: Georgia, serif;
-  line-height: 1.15;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;*/
   overflow-y: scroll;
-  /*font-size: 18px;*/
 }
 
-/*// @font-face {
-//   font-family: 'TiemposText';
-//   src: url('../fonts/TiemposText-Regular.otf') format('opentype');
-//   font-weight: normal;
-//   font-style: normal;
-// }
-//
-// @font-face {
-//   font-family: 'NeueHaasUnicaPro';
-//   src: url('../fonts/NeueHaasUnicaPro.otf') format('opentype');
-//   font-weight: normal;
-//   font-style: normal;
-// }*/
-
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers (opinionated).
- */
 body { margin: 0; }
-/**
- * Add the correct display in IE 9-.
- */
 article, aside, footer, header, nav, section { display: block; }
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
 h1 { font-size: 2em; margin: .67em 0; }
-/* Grouping content
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in IE.
- */
 figcaption, figure, main {/* 1 */ display: block; }
-/**
- * Add the correct margin in IE 8.
- */
 figure { margin: 1em 40px; }
 /**
  * 1. Add the correct box sizing in Firefox.
@@ -248,146 +207,17 @@ html, body, div, article, section, main, footer, header, form, fieldset, pre,
 code, p, ul, ol, li, dl, dt, dd, textarea, input[type="email"],
 input[type="number"], input[type="password"], input[type="tel"],
 input[type="text"], input[type="url"], .border-box { box-sizing: border-box; }
-/*
 
-   ASPECT RATIOS
-
-*/
-/* This is for fluid media that is embedded from third party sites like youtube, vimeo etc.
- * Wrap the outer element in aspect-ratio and then extend it with the desired ratio i.e
- * Make sure there are no height and width attributes on the embedded media.
- * Adapted from: https://github.com/suitcss/components-flex-embed
- *
- * Example:
- *
- * <div class="aspect-ratio aspect-ratio--16x9">
- *  <iframe class="aspect-ratio--object"></iframe>
- * </div>
- *
- * */
-.aspect-ratio { height: 0; position: relative; }
-.aspect-ratio--16x9 { padding-bottom: 56.25%; }
-.aspect-ratio--9x16 { padding-bottom: 177.77%; }
-.aspect-ratio--4x3 { padding-bottom: 75%; }
-.aspect-ratio--3x4 { padding-bottom: 133.33%; }
-.aspect-ratio--6x4 { padding-bottom: 66.6%; }
-.aspect-ratio--4x6 { padding-bottom: 150%; }
-.aspect-ratio--8x5 { padding-bottom: 62.5%; }
-.aspect-ratio--5x8 { padding-bottom: 160%; }
-.aspect-ratio--7x5 { padding-bottom: 71.42%; }
-.aspect-ratio--5x7 { padding-bottom: 140%; }
-.aspect-ratio--1x1 { padding-bottom: 100%; }
-.aspect-ratio--object { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 100; }
-/*
-
-   IMAGES
-   Docs: http://tachyons.io/docs/elements/images/
-
-*/
-/* Responsive images! */
 img { max-width: 100%; }
-/*
 
-   BACKGROUND SIZE
-   Docs: http://tachyons.io/docs/themes/background-size/
 
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
-/*
-  Often used in combination with background image set as an inline style
-  on an html element.
-*/
-.cover { background-size: cover !important; }
-.contain { background-size: contain !important; }
-/*
-
-    BACKGROUND POSITION
-
-    Base:
-    bg = background
-
-    Modifiers:
-    -center = center center
-    -top = top center
-    -right = center right
-    -bottom = bottom center
-    -left = center left
-
-    Media Query Extensions:
-      -ns = not-small
-      -m  = medium
-      -l  = large
-
- */
-.bg-center { background-repeat: no-repeat; background-position: center center; }
-.bg-top { background-repeat: no-repeat; background-position: top center; }
-.bg-right { background-repeat: no-repeat; background-position: center right; }
-.bg-bottom { background-repeat: no-repeat; background-position: bottom center; }
-.bg-left { background-repeat: no-repeat; background-position: center left; }
-/*
-
-   OUTLINES
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
-.outline { outline: 1px solid; }
-.outline-transparent { outline: 1px solid transparent; }
-.outline-0 { outline: 0; }
-/*
-
-    BORDERS
-    Docs: http://tachyons.io/docs/themes/borders/
-
-    Base:
-      b = border
-
-    Modifiers:
-      a = all
-      t = top
-      r = right
-      b = bottom
-      l = left
-      n = none
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
 .ba { border-style: solid; border-width: 1px; }
 .bt { border-top-style: solid; border-top-width: 1px; }
 .br { border-right-style: solid; border-right-width: 1px; }
 .bb { border-bottom-style: solid; border-bottom-width: 1px; }
 .bl { border-left-style: solid; border-left-width: 1px; }
 .bn { border-style: none; border-width: 0; }
-/*
 
-   BORDER COLORS
-   Docs: http://tachyons.io/docs/themes/borders/
-
-   Border colors can be used to extend the base
-   border classes ba,bt,bb,br,bl found in the _borders.css file.
-
-   The base border class by default will set the color of the border
-   to that of the current text color. These classes are for the cases
-   where you desire for the text and border colors to be different.
-
-   Base:
-     b = border
-
-   Modifiers:
-   --color-name = each color variable name is also a border color name
-
-*/
 .b--black { border-color: #000; }
 .b--near-black { border-color: #111; }
 .b--dark-gray { border-color: #333; }
@@ -678,187 +508,17 @@ img { max-width: 100%; }
    -l  = large
 
 */
-.flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
-.inline-flex { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; }
-/* 1. Fix for Chrome 44 bug.
- * https://code.google.com/p/chromium/issues/detail?id=506893 */
-.flex-auto { -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto; min-width: 0; /* 1 */ min-height: 0; /* 1 */ }
-.flex-none { -webkit-box-flex: 0; -ms-flex: none; flex: none; }
-.flex-column { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
-.flex-row { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
-.flex-wrap { -ms-flex-wrap: wrap; flex-wrap: wrap; }
-.items-start { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
-.items-end { -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
-.items-center { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-.items-baseline { -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; }
-.items-stretch { -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; }
-.self-start { -ms-flex-item-align: start; align-self: flex-start; }
-.self-end { -ms-flex-item-align: end; align-self: flex-end; }
-.self-center { -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; }
-.self-baseline { -ms-flex-item-align: baseline; align-self: baseline; }
-.self-stretch { -ms-flex-item-align: stretch; -ms-grid-row-align: stretch; align-self: stretch; }
-.justify-start { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
-.justify-end { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
-.justify-center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-.justify-between { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-.justify-around { -ms-flex-pack: distribute; justify-content: space-around; }
-.content-start { -ms-flex-line-pack: start; align-content: flex-start; }
-.content-end { -ms-flex-line-pack: end; align-content: flex-end; }
-.content-center { -ms-flex-line-pack: center; align-content: center; }
-.content-between { -ms-flex-line-pack: justify; align-content: space-between; }
-.content-around { -ms-flex-line-pack: distribute; align-content: space-around; }
-.content-stretch { -ms-flex-line-pack: stretch; align-content: stretch; }
-.order-0 { -webkit-box-ordinal-group: 1; -ms-flex-order: 0; order: 0; }
-.order-1 { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }
-.order-2 { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }
-.order-3 { -webkit-box-ordinal-group: 4; -ms-flex-order: 3; order: 3; }
-.order-4 { -webkit-box-ordinal-group: 5; -ms-flex-order: 4; order: 4; }
-.order-5 { -webkit-box-ordinal-group: 6; -ms-flex-order: 5; order: 5; }
-.order-6 { -webkit-box-ordinal-group: 7; -ms-flex-order: 6; order: 6; }
-.order-7 { -webkit-box-ordinal-group: 8; -ms-flex-order: 7; order: 7; }
-.order-8 { -webkit-box-ordinal-group: 9; -ms-flex-order: 8; order: 8; }
-.order-last { -webkit-box-ordinal-group: 100000; -ms-flex-order: 99999; order: 99999; }
-/*
 
-   FLOATS
-   http://tachyons.io/docs/layout/floats/
-
-   1. Floated elements are automatically rendered as block level elements.
-      Setting floats to display inline will fix the double margin bug in
-      ie6. You know... just in case.
-
-   2. Don't forget to clearfix your floats with .cf
-
-   Base:
-     f = float
-
-   Modifiers:
-     l = left
-     r = right
-     n = none
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
 .fl { float: left; _display: inline; }
 .fr { float: right; _display: inline; }
 .fn { float: none; }
-/*
 
-   FONT FAMILY GROUPS
-   Docs: http://tachyons.io/docs/typography/font-family/
-
-*/
-.sans-serif { font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; }
-.serif { font-family: georgia, times, serif; }
-.system-sans-serif { font-family: sans-serif; }
-.system-serif { font-family: serif; }
-/* Monospaced Typefaces (for code) */
-/* From http://cssfontstack.com */
-code, .code { font-family: Consolas, monaco, monospace; }
-.courier { font-family: 'Courier Next', courier, monospace; }
-/* Sans-Serif Typefaces */
-.helvetica { font-family: 'helvetica neue', helvetica, sans-serif; }
-.avenir { font-family: 'avenir next', avenir, sans-serif; }
-/* Serif Typefaces */
-.athelas { font-family: athelas, georgia, serif; }
-.georgia { font-family: georgia, serif; }
-.times { font-family: times, serif; }
-.bodoni { font-family: "Bodoni MT", serif; }
-.calisto { font-family: "Calisto MT", serif; }
-.garamond { font-family: garamond, serif; }
-.baskerville { font-family: baskerville, serif; }
-/*
-
-   FONT STYLE
-   Docs: http://tachyons.io/docs/typography/font-style/
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
 .i { font-style: italic; }
 .fs-normal { font-style: normal; }
-/*
 
-   FONT WEIGHT
-   Docs: http://tachyons.io/docs/typography/font-weight/
-
-   Base
-     fw = font-weight
-
-   Modifiers:
-     1 = literal value 100
-     2 = literal value 200
-     3 = literal value 300
-     4 = literal value 400
-     5 = literal value 500
-     6 = literal value 600
-     7 = literal value 700
-     8 = literal value 800
-     9 = literal value 900
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
 .normal { font-weight: normal; }
 .b { font-weight: bold; }
-.fw1 { font-weight: 100; }
-.fw2 { font-weight: 200; }
-.fw3 { font-weight: 300; }
-.fw4 { font-weight: 400; }
-.fw5 { font-weight: 500; }
-.fw6 { font-weight: 600; }
-.fw7 { font-weight: 700; }
-.fw8 { font-weight: 800; }
-.fw9 { font-weight: 900; }
-/*
 
-   FORMS
-
-*/
-.input-reset { -webkit-appearance: none; -moz-appearance: none; }
-.button-reset::-moz-focus-inner, .input-reset::-moz-focus-inner { border: 0; padding: 0; }
-/*
-
-   HEIGHTS
-   Docs: http://tachyons.io/docs/layout/heights/
-
-   Base:
-     h = height
-     min-h = min-height
-     min-vh = min-height vertical screen height
-     vh = vertical screen height
-
-   Modifiers
-     1 = 1st step in height scale
-     2 = 2nd step in height scale
-     3 = 3rd step in height scale
-     4 = 4th step in height scale
-     5 = 5th step in height scale
-
-     -25   = literal value 25%
-     -50   = literal value 50%
-     -75   = literal value 75%
-     -100  = literal value 100%
-
-     -auto = string value of auto
-     -inherit = string value of inherit
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
 /* Height Scale */
 .h1 { height: 1rem; }
 .h2 { height: 2rem; }
@@ -908,6 +568,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .lh-solid { line-height: 1; }
 .lh-title { line-height: 1.25; }
 .lh-copy { line-height: 1.8; }
+.lh-dk {line-height: 32px; }
 /*
 
    LINKS
@@ -926,36 +587,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 
 */
 .list { list-style-type: none; }
-/*
 
-   MAX WIDTHS
-   Docs: http://tachyons.io/docs/layout/max-widths/
-
-   Base:
-     mw = max-width
-
-   Modifiers
-     1 = 1st step in width scale
-     2 = 2nd step in width scale
-     3 = 3rd step in width scale
-     4 = 4th step in width scale
-     5 = 5th step in width scale
-     6 = 6st step in width scale
-     7 = 7nd step in width scale
-     8 = 8rd step in width scale
-     9 = 9th step in width scale
-
-     -100 = literal value 100%
-
-     -none  = string value none
-
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
 /* Max Width Percentages */
 .mw-100 { max-width: 100%; }
 /* Max Width Scale */
@@ -970,43 +602,6 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .mw9 { max-width: 96rem; }
 /* Max Width String Properties */
 .mw-none { max-width: none; }
-/*
-
-   WIDTHS
-   Docs: http://tachyons.io/docs/layout/widths/
-
-   Base:
-     w = width
-
-   Modifiers
-     1 = 1st step in width scale
-     2 = 2nd step in width scale
-     3 = 3rd step in width scale
-     4 = 4th step in width scale
-     5 = 5th step in width scale
-
-     -10  = literal value 10%
-     -20  = literal value 20%
-     -25  = literal value 25%
-     -33  = literal value 33%
-     -34  = literal value 34%
-     -40  = literal value 40%
-     -50  = literal value 50%
-     -60  = literal value 60%
-     -75  = literal value 75%
-     -80  = literal value 80%
-     -100 = literal value 100%
-
-     -third = 100% / 3 (Not supported in opera mini or IE8)
-     -auto  = string value auto
-
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
 /* Width Scale */
 .w1 { width: 1rem; }
 .w2 { width: 2rem; }
@@ -1030,39 +625,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .w-third { width: calc( 100% / 3 ); }
 .w-two-thirds { width: calc( 100% / 1.5 ); }
 .w-auto { width: auto; }
-/*
 
-    OVERFLOW
-
-    Media Query Extensions:
-      -ns = not-small
-      -m  = medium
-      -l  = large
-
- */
-.overflow-visible { overflow: visible; }
-.overflow-hidden { overflow: hidden; }
-.overflow-scroll { overflow: scroll; }
-.overflow-auto { overflow: auto; }
-.overflow-x-visible { overflow-x: visible; }
-.overflow-x-hidden { overflow-x: hidden; }
-.overflow-x-scroll { overflow-x: scroll; }
-.overflow-x-auto { overflow-x: auto; }
-.overflow-y-visible { overflow-y: visible; }
-.overflow-y-hidden { overflow-y: hidden; }
-.overflow-y-scroll { overflow-y: scroll; }
-.overflow-y-auto { overflow-y: auto; }
-/*
-
-   POSITIONING
-   Docs: http://tachyons.io/docs/layout/position/
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
 .static { position: static; }
 .relative { position: relative; }
 .absolute { position: absolute; }
@@ -1152,25 +715,6 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .washed-green { color: #e8fdf5; }
 .washed-yellow { color: #fffceb; }
 .washed-red { color: #ffdfdf; }
-.bg-black-90 { background-color: rgba( 0, 0, 0, .9 ); }
-.bg-black-80 { background-color: rgba( 0, 0, 0, .8 ); }
-.bg-black-70 { background-color: rgba( 0, 0, 0, .7 ); }
-.bg-black-60 { background-color: rgba( 0, 0, 0, .6 ); }
-.bg-black-50 { background-color: rgba( 0, 0, 0, .5 ); }
-.bg-black-40 { background-color: rgba( 0, 0, 0, .4 ); }
-.bg-black-30 { background-color: rgba( 0, 0, 0, .3 ); }
-.bg-black-20 { background-color: rgba( 0, 0, 0, .2 ); }
-.bg-black-10 { background-color: rgba( 0, 0, 0, .1 ); }
-.bg-black-05 { background-color: rgba( 0, 0, 0, .05 ); }
-.bg-white-90 { background-color: rgba( 255, 255, 255, .9 ); }
-.bg-white-80 { background-color: rgba( 255, 255, 255, .8 ); }
-.bg-white-70 { background-color: rgba( 255, 255, 255, .7 ); }
-.bg-white-60 { background-color: rgba( 255, 255, 255, .6 ); }
-.bg-white-50 { background-color: rgba( 255, 255, 255, .5 ); }
-.bg-white-40 { background-color: rgba( 255, 255, 255, .4 ); }
-.bg-white-30 { background-color: rgba( 255, 255, 255, .3 ); }
-.bg-white-20 { background-color: rgba( 255, 255, 255, .2 ); }
-.bg-white-10 { background-color: rgba( 255, 255, 255, .1 ); }
 /* Background colors */
 .bg-black { background-color: #000; }
 .bg-near-black { background-color: #111; }
@@ -1510,138 +1054,15 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .mh5 { margin-left: 4rem; margin-right: 4rem; }
 .mh6 { margin-left: 8rem; margin-right: 8rem; }
 .mh7 { margin-left: 16rem; margin-right: 16rem; }
-/*
-   NEGATIVE MARGINS
 
-   Base:
-     n = negative
-
-   Modifiers:
-     a = all
-     t = top
-     r = right
-     b = bottom
-     l = left
-
-     1 = 1st step in spacing scale
-     2 = 2nd step in spacing scale
-     3 = 3rd step in spacing scale
-     4 = 4th step in spacing scale
-     5 = 5th step in spacing scale
-     6 = 6th step in spacing scale
-     7 = 7th step in spacing scale
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
-.na1 { margin: -.25rem; }
-.na2 { margin: -.5rem; }
-.na3 { margin: -1rem; }
-.na4 { margin: -2rem; }
-.na5 { margin: -4rem; }
-.na6 { margin: -8rem; }
-.na7 { margin: -16rem; }
-.nl1 { margin-left: -.25rem; }
-.nl2 { margin-left: -.5rem; }
-.nl3 { margin-left: -1rem; }
-.nl4 { margin-left: -2rem; }
-.nl5 { margin-left: -4rem; }
-.nl6 { margin-left: -8rem; }
-.nl7 { margin-left: -16rem; }
-.nr1 { margin-right: -.25rem; }
-.nr2 { margin-right: -.5rem; }
-.nr3 { margin-right: -1rem; }
-.nr4 { margin-right: -2rem; }
-.nr5 { margin-right: -4rem; }
-.nr6 { margin-right: -8rem; }
-.nr7 { margin-right: -16rem; }
-.nb1 { margin-bottom: -.25rem; }
-.nb2 { margin-bottom: -.5rem; }
-.nb3 { margin-bottom: -1rem; }
-.nb4 { margin-bottom: -2rem; }
-.nb5 { margin-bottom: -4rem; }
-.nb6 { margin-bottom: -8rem; }
-.nb7 { margin-bottom: -16rem; }
-.nt1 { margin-top: -.25rem; }
-.nt2 { margin-top: -.5rem; }
-.nt3 { margin-top: -1rem; }
-.nt4 { margin-top: -2rem; }
-.nt5 { margin-top: -4rem; }
-.nt6 { margin-top: -8rem; }
-.nt7 { margin-top: -16rem; }
-/*
-
-  TABLES
-  Docs: http://tachyons.io/docs/elements/tables/
-
-*/
-.collapse { border-collapse: collapse; border-spacing: 0; }
-.striped--light-silver:nth-child(odd) { background-color: #aaa; }
-.striped--moon-gray:nth-child(odd) { background-color: #ccc; }
-.striped--light-gray:nth-child(odd) { background-color: #eee; }
-.striped--near-white:nth-child(odd) { background-color: #f4f4f4; }
-.stripe-light:nth-child(odd) { background-color: rgba( 255, 255, 255, .1 ); }
-.stripe-dark:nth-child(odd) { background-color: rgba( 0, 0, 0, .1 ); }
-/*
-
-   TEXT DECORATION
-   Docs: http://tachyons.io/docs/typography/text-decoration/
-
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
 .strike { text-decoration: line-through; }
 .underline { text-decoration: underline; }
 .no-underline { text-decoration: none; }
-/*
 
-  TEXT ALIGN
-  Docs: http://tachyons.io/docs/typography/text-align/
-
-  Base
-    t = text-align
-
-  Modifiers
-    l = left
-    r = right
-    c = center
-
-  Media Query Extensions:
-    -ns = not-small
-    -m  = medium
-    -l  = large
-
-*/
 .tl { text-align: left; }
 .tr { text-align: right; }
 .tc { text-align: center; }
-/*
 
-   TEXT TRANSFORM
-   Docs: http://tachyons.io/docs/typography/text-transform/
-
-   Base:
-     tt = text-transform
-
-   Modifiers
-     c = capitalize
-     l = lowercase
-     u = uppercase
-     n = none
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
 .ttc { text-transform: capitalize; }
 .ttl { text-transform: lowercase; }
 .ttu { text-transform: uppercase; }
@@ -1680,7 +1101,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .f2 { font-size: 2.25rem; }
 .f3 { font-size: 1.5rem; }
 .f4 { font-size: 1.25rem; }
-.f5 { font-size: 1rem; }
+.f5 { font-size: 18px; }
 .f6 { font-size: .875rem; }
 /*
 
@@ -1711,31 +1132,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 */
 .overflow-container { overflow-y: scroll; }
 .center { margin-right: auto; margin-left: auto; }
-/*
 
-   VISIBILITY
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
-/*
-    Text that is hidden but accessible
-    Ref: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-*/
-.clip { position: fixed !important; _position: absolute !important; clip: rect( 1px 1px 1px 1px ); /* IE6, IE7 */ clip: rect( 1px, 1px, 1px, 1px ); }
-/*
-
-   WHITE SPACE
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
 .ws-normal { white-space: normal; }
 .nowrap { white-space: nowrap; }
 .pre { white-space: pre; }
@@ -1774,159 +1171,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .dim { opacity: 1; -webkit-transition: opacity .15s ease-in; transition: opacity .15s ease-in; }
 .dim:hover, .dim:focus { opacity: .8; -webkit-transition: opacity .15s ease-in; transition: opacity .15s ease-in; }
 .dim:active { opacity: .8; -webkit-transition: opacity .15s ease-out; transition: opacity .15s ease-out; }
-/*
 
-  Hide child & reveal on hover:
-
-  Put the hide-child class on a parent element and any nested element with the
-  child class will be hidden and displayed on hover or focus.
-
-  <div class="hide-child">
-    <div class="child"> Hidden until hover or focus </div>
-    <div class="child"> Hidden until hover or focus </div>
-    <div class="child"> Hidden until hover or focus </div>
-    <div class="child"> Hidden until hover or focus </div>
-  </div>
-*/
-.hide-child .child { opacity: 0; -webkit-transition: opacity .15s ease-in; transition: opacity .15s ease-in; }
-.hide-child:hover  .child, .hide-child:focus  .child, .hide-child:active .child { opacity: 1; -webkit-transition: opacity .15s ease-in; transition: opacity .15s ease-in; }
-.underline-hover:hover, .underline-hover:focus { text-decoration: underline; }
-/* Can combine this with overflow-hidden to make background images grow on hover
- * even if you are using background-size: cover */
-.grow { -moz-osx-font-smoothing: grayscale; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform: translateZ( 0 ); transform: translateZ( 0 ); -webkit-transition: -webkit-transform .25s ease-out; transition: -webkit-transform .25s ease-out; transition: transform .25s ease-out; transition: transform .25s ease-out, -webkit-transform .25s ease-out; }
-.grow:hover, .grow:focus { -webkit-transform: scale( 1.05 ); transform: scale( 1.05 ); }
-.grow:active { -webkit-transform: scale( .90 ); transform: scale( .90 ); }
-.grow-large { -moz-osx-font-smoothing: grayscale; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform: translateZ( 0 ); transform: translateZ( 0 ); -webkit-transition: -webkit-transform .25s ease-in-out; transition: -webkit-transform .25s ease-in-out; transition: transform .25s ease-in-out; transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out; }
-.grow-large:hover, .grow-large:focus { -webkit-transform: scale( 1.2 ); transform: scale( 1.2 ); }
-.grow-large:active { -webkit-transform: scale( .95 ); transform: scale( .95 ); }
-/* Add pointer on hover */
-.pointer:hover { cursor: pointer; }
-/*
-   Add shadow on hover.
-
-   Performant box-shadow animation pattern from
-   http://tobiasahlin.com/blog/how-to-animate-box-shadow/
-*/
-.shadow-hover::after { box-shadow: 0 0 8px 2px rgba( 0, 0, 0, .2 ); opacity: 0; -webkit-transition: opacity .25s ease-in-out; transition: opacity .25s ease-in-out; }
-.shadow-hover:hover::after, .shadow-hover:focus::after { opacity: 1; }
-/* Combine with classes in skins and skins-pseudo for
- * thousands of different transition possibilities. */
-.bg-animate, .bg-animate:hover, .bg-animate:focus { -webkit-transition: background-color .15s ease-in-out; transition: background-color .15s ease-in-out; }
-/*
-
-  Z-INDEX
-
-  Base
-    z = z-index
-
-  Modifiers
-    -0 = literal value 0
-    -1 = literal value 1
-    -2 = literal value 2
-    -3 = literal value 3
-    -4 = literal value 4
-    -5 = literal value 5
-    -999 = literal value 999
-    -9999 = literal value 9999
-
-    -max = largest accepted z-index value as integer
-
-    -inherit = string value inherit
-    -initial = string value initial
-    -unset = string value unset
-
-  MDN: https://developer.mozilla.org/en/docs/Web/CSS/z-index
-  Spec: http://www.w3.org/TR/CSS2/zindex.html
-  Articles:
-    https://philipwalton.com/articles/what-no-one-told-you-about-z-index/
-
-  Tips on extending:
-  There might be a time worth using negative z-index values.
-  Or if you are using tachyons with another project, you might need to
-  adjust these values to suit your needs.
-
-*/
-.z-0 { z-index: 0; }
-.z-1 { z-index: 1; }
-.z-2 { z-index: 2; }
-.z-3 { z-index: 3; }
-.z-4 { z-index: 4; }
-.z-5 { z-index: 5; }
-.z-999 { z-index: 999; }
-.z-9999 { z-index: 9999; }
-.z-max { z-index: 2147483647; }
-.z-inherit { z-index: inherit; }
-.z-initial { z-index: initial; }
-.z-unset { z-index: unset; }
-/*
-
-    CHILDREN
-    Tachyons module for styling nested elements
-    that are generated by a cms.
-
-*/
-.nested-copy-line-height p, .nested-copy-line-height ul,
-.nested-copy-line-height ol { line-height: 1.5; }
-.nested-headline-line-height h1, .nested-headline-line-height h2,
-.nested-headline-line-height h3, .nested-headline-line-height h4,
-.nested-headline-line-height h5, .nested-headline-line-height h6 { line-height: 1.25; }
-.nested-list-reset ul, .nested-list-reset ol { padding-left: 0; margin-left: 0; list-style-type: none; }
-.nested-copy-indent p+p { text-indent: 1em; margin-top: 0; margin-bottom: 0; }
-.nested-copy-seperator p+p { margin-top: 1.5em; }
-.nested-img img { width: 100%; max-width: 100%; display: block; }
-/*
-
-  STYLES
-
-  Add custom styles here.
-
-*/
-/* Variables */
-/* Importing here will allow you to override any variables in the modules */
-
-
-/*
-
-  CUSTOM MEDIA QUERIES
-
-  Media query values can be changed to fit your own content.
-  There are no magic bullets when it comes to media query width values.
-  They should be declared in em units - and they should be set to meet
-  the needs of your content. You can also add additional media queries,
-  or remove some of the existing ones.
-
-  These media queries can be referenced like so:
-
-  @media (--breakpoint-not-small) {
-    .medium-and-larger-specific-style {
-      background-color: red;
-    }
-  }
-
-  @media (--breakpoint-medium) {
-    .medium-screen-specific-style {
-      background-color: red;
-    }
-  }
-
-  @media (--breakpoint-large) {
-    .large-and-larger-screen-specific-style {
-      background-color: red;
-    }
-  }
-
-*/
-/* Media Queries */
-/* Debugging */
-/*
-
-  DEBUG CHILDREN
-  Docs: http://tachyons.io/docs/debug/
-
-  Just add the debug class to any element to see outlines on its
-  children.
-
-*/
 .debug * { outline: 1px solid gold; }
 .debug-white * { outline: 1px solid white; }
 .debug-black * { outline: 1px solid black; }
@@ -3174,7 +2419,7 @@ hr {
   grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
   grid-gap: 4em;
   -ms-flex-align: baseline;
-  align-items: baselin8
+  align-items: baseline;
 }
 
 @media (max-width: 1170px) {
@@ -3191,4 +2436,16 @@ hr {
 p {
   margin-top: .5em;
   margin-bottom: .5em;
+}
+
+.fix {
+  font-size: 20px !important;
+}
+
+.serif {
+  font-family: var(--serif);
+}
+
+.sans {
+  font-family: var(--sans-serif);
 }

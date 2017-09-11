@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Tiempos Text';
-  src: url('/static/webfonts/TiemposText-Regular.otf') format('opentype');
+  src: url('TiemposText-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Neue Haas Unica Pro';
-  src: url('/static/webfonts/NeueHaasUnicaPro.otf') format('opentype');
+  src: url('NeueHaasUnicaPro.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }

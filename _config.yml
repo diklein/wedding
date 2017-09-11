@@ -19,3 +19,4 @@ assets:
   sources:
     - "_assets/css"
     - "_assets/js"
+    - "uploads"

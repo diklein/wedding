@@ -2,13 +2,11 @@ html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background-color: #fff;
-  -webkit-font-smoothing: antialised;
+  -webkit-font-smoothing: antialiased;
 }
 
 .wf-loading:root {
   --serif: var(--serif-fallback);
   --sans-serif: var(--sans-serif-fallback);
-
   font-family: --serif-fallback;
 }
