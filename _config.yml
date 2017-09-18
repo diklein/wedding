@@ -1,7 +1,7 @@
 name: "Remy and Dave"
 descripiton: "Remy and Dave's Wedding Website"
 author: "David Klein"
-url: "http://localhost:4000"
+url: "http:remyanddave.com"
 permalink: pretty
 
 plugins:
