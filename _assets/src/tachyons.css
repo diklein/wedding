@@ -60,7 +60,7 @@ dfn { font-style: italic; }
 /**
  * Add the correct background and color in IE 9-.
  */
-mark { background-color: #eee; color: #000; }
+mark { background-color: rgba(53,126,221,.2); color: #000; }
 /**
  * Add the correct font size in all browsers.
  */
@@ -2448,4 +2448,11 @@ p {
 
 .sans {
   font-family: var(--sans-serif);
+}
+
+.p-pill {
+  padding-top: 0px;
+  padding-bottom: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
