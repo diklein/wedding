@@ -4,7 +4,7 @@ author: "David Klein"
 url: "http://localhost:4000"
 permalink: pretty
 
-plugins: [jekyll-assets]
+#plugins: [jekyll-assets]
 
 manifest_name: Remy & David Are Getting Married
 manifest_short_name: Remy & Dave
