@@ -4,6 +4,8 @@ author: "David Klein"
 url: "http://localhost:4000"
 permalink: pretty
 
+plugins_dir: ./_scripts
+
 plugins:
   - jekyll-assets
 
