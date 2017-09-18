@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem "jekyll"
 
-group :plugins do
+group :jekyll_plugins do
   gem "jekyll-assets"
 end
 
