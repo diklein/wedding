@@ -6,16 +6,16 @@
  var title = "{{ page.title }}";
  var tag = "{{ page.tag }}";
  if (title == "Events" || tag == "events") {
-    eventsLink.className = "blue no-underline mr3";
+    eventsLink.className = "blue no-underline mr3 f5 f4-ns";
  } else if (title == "Accomodations" || tag == "accomodations") {
-    accomodationsLink.className = "blue no-underline mr3";
+    accomodationsLink.className = "blue no-underline mr3 f5 f4-ns";
  }
  else if (title == "Things to Do" || tag == "thingstodo") {
-    thingsLink.className = "blue no-underline mr3";
+    thingsLink.className = "blue no-underline mr3 f5 f4-ns";
  }
  else if (title == "Registry" || tag == "registry") {
-    registryLink.className = "blue no-underline mr3";
+    registryLink.className = "blue no-underline mr3 f5 f4-ns";
  }
  else if (title == "FAQ" || tag == "faq") {
-    faqLink.className = "blue no-underline";
+    faqLink.className = "blue no-underline f5 f4-ns";
  }

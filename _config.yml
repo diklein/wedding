@@ -1,9 +1,9 @@
 name: "Remy and Dave"
 descripiton: "Remy and Dave's Wedding Website"
 author: "David Klein"
-url: "http:remyanddave.com"
+url: "http://www.remyanddave.com"
 permalink: pretty
-
+googleID: 39930910-7
 plugins:
   - jekyll-assets
 

@@ -2416,7 +2416,7 @@ hr {
   display: -ms-grid;
   display: grid;
   /*-ms-grid-columns: (1fr)[2];*/
-  grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px,1fr));
   grid-gap: 4em;
   -ms-flex-align: baseline;
   align-items: baseline;
@@ -2455,4 +2455,19 @@ p {
   padding-bottom: 1px;
   padding-left: 12px;
   padding-right: 12px;
+}
+
+@media (min-width: 1040px) {
+  .img-container {
+    background: #fafafa;
+    height: 683px;
+  }
+}
+
+.fix1 {
+  padding-top: 72px;
+}
+
+.fix2 {
+  padding-top: 32px;
 }
